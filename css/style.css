@@ -11,7 +11,10 @@ body {
 h1 {
     font-size: 50px;
     text-align: center;
-    background: rgba(255, 255, 255, 0.098);
+    background: rgba(255, 255, 255, 0.236);
+    border: 3px;
+    border-radius: 10px;
+    margin: 3% 0.5%;
 }
 h2 {
     margin: 10px 0;
@@ -51,7 +54,6 @@ p {
     height: 30vh;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     background-image: url(/images/moi.jpg);
     background-repeat: no-repeat;
@@ -62,10 +64,13 @@ p {
 .scroll {
     text-transform: uppercase;
     font-weight: 500;
-    margin-top: 50px;
+    padding: 1%;
+    margin: 3% 0.5%;
     letter-spacing: 2px;
     position: relative;
-    background: rgba(255, 255, 255, 0.098);
+    background: rgba(255, 255, 255, 0.236);
+    border: 1px;
+    border-radius: 5px;
 }
 .imgscroll {
     display: flex;
@@ -127,16 +132,11 @@ p {
 /* RESPONSIVE */
 @media screen and (max-width: 767px) {
     .title {
-        height: 45vh;
+        background: none;
         justify-content: end;
     }
     .content {
         margin-top: 10%;
-    }
-}
-@media screen and (max-width: 1023px) {
-    .title {
-        justify-content: end;
     }
 }
 
