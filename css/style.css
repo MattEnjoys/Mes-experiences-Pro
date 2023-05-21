@@ -1,0 +1,143 @@
+/* RESET DE LA PAGE */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    position: relative;
+    background: black;
+    color: white;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.098);
+}
+h2 {
+    margin: 10px 0;
+}
+h3 {
+    font-weight: 500;
+    margin: 10px;
+    opacity: 0.65;
+}
+p {
+    font-size: 14px;
+    margin: 10px;
+}
+/* LES ANIMATIONS DE GSAP */
+.circle,
+.experience-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    /*Ici la marge est négative pour que les cercles se superposent*/
+    margin: -13px 0 0 50px;
+}
+.experience-circle {
+    background-color: black;
+    position: relative;
+    z-index: 10;
+    margin-top: -25px;
+}
+.line {
+    width: 100%;
+    height: 2px;
+    margin: -2px;
+    transform: translateY(-12px);
+}
+/* PREMIER BLOC */
+.title {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(/images/moi.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 2%;
+    border-radius: 50px;
+}
+.scroll {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 50px;
+    letter-spacing: 2px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.098);
+}
+.imgscroll {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* DEUXIEME BLOC */
+.content {
+    position: relative;
+    max-width: 500px;
+    margin: 5% auto;
+}
+.experience {
+    width: calc(100% - 160px);
+    left: 140px;
+    position: absolute;
+    padding-top: 10px;
+    text-align: left;
+}
+.experience:nth-child(1) {
+    top: 500px;
+}
+.experience:nth-child(2) {
+    top: 1000px;
+}
+.experience:nth-child(3) {
+    top: 1500px;
+}
+.experience:nth-child(4) {
+    top: 2000px;
+}
+.experience:nth-child(5) {
+    top: 2500px;
+}
+.experience:nth-child(6) {
+    top: 3000px;
+}
+.experience:nth-child(7) {
+    top: 3500px;
+}
+.experience:nth-child(8) {
+    top: 4000px;
+}
+.experience:nth-child(9) {
+    top: 4500px;
+}
+.experience:nth-child(10) {
+    top: 5000px;
+}
+.experience:nth-child(11) {
+    top: 5500px;
+}
+.experience:nth-child(12) {
+    top: 6000px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 767px) {
+    .title {
+        height: 45vh;
+        justify-content: end;
+    }
+    .content {
+        margin-top: 10%;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .title {
+        justify-content: end;
+    }
+}
+
+/* CHANGER LE FONT */

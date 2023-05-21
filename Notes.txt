@@ -1,0 +1,18 @@
+Pour que le programme fonctionne correctement, il a fallut mettre GreenSosk en ligne de commande:
+
+npm install gsap
+
+Puis faire:
+
+npm i
+
+npm run dev
+
+
+
+
+
+
+<!-- LE LOGO DANS LE LINK FAVICONE NE PRENDS PAS -->
+
+/* CHANGER LE FONT */
